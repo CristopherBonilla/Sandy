@@ -73,10 +73,16 @@ button:hover {
     opacity: 0.8;
 }
 
+#capibara-saludo {
+    display: block; 
+    margin: 0 auto; /* Centra la imagen */
+    width: 100px; /* Ajusta el ancho al 80% del contenedor */
+}
+
 /* Estilo de la imagen */
 #girasol {
     display: block; 
-    margin: 0 auto; /* Centra la imagen */
+    margin: 0px 35px; /* Centra la imagen */
     width: 80%; /* Ajusta el ancho al 80% del contenedor */
     max-width: 300px;
     height: auto;
@@ -84,7 +90,7 @@ button:hover {
 
 #girasol2 {
     display: block; 
-    margin: -241px 180px;
+    margin: -241px 185px;
     width: 80%; /* Ajusta el ancho al 80% del contenedor */
     max-width: 300px;
     height: auto;
@@ -92,14 +98,33 @@ button:hover {
 
 #girasol3 {
     display: block; 
-    margin: -241px -127px;
+    margin: -241px -120px;
     width: 80%; /* Ajusta el ancho al 80% del contenedor */
     max-width: 300px;
     height: auto;
 }
 
-#capibara-saludo {
+#girasol4 {
     display: block; 
-    margin: 0 auto; /* Centra la imagen */
-    width: 100px; /* Ajusta el ancho al 80% del contenedor */
+    margin-top: 132px; /* Centra la imagen */
+    margin-left: 20px;
+    width: 80%; /* Ajusta el ancho al 80% del contenedor */
+    max-width: 300px;
 }
+
+#girasol5 {
+    display: block; 
+    margin: -241px 185px;
+    width: 80%; /* Ajusta el ancho al 80% del contenedor */
+    max-width: 300px;
+    height: auto;
+}
+
+#girasol6 {
+    display: block; 
+    margin: -241px -120px;
+    width: 80%; /* Ajusta el ancho al 80% del contenedor */
+    max-width: 300px;
+    height: auto;
+}
+
