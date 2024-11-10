@@ -14,13 +14,13 @@ body {
     background: url('../medios/fondo.png') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
-    margin-left: 50%;
+    margin-left: 15%;
 }
 
 /* Estilo para el primer contenedor */
 #contenedor {
     text-align: center;
-    /* margin-left: 10%; */
+    margin-left: -3%;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
@@ -35,7 +35,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     max-width: 300px;
-    /* margin-left: 10%; */
+    margin-left: -3%; 
 }
 
 /* Estilo del mensaje */
@@ -91,9 +91,8 @@ button:hover {
     height: auto;
 }
 
-/* #cesped {
+#capibara-saludo {
     display: block; 
-    margin: -200px -215px;
-    max-width: 400px;
-
-} */
+    margin: 0 auto; /* Centra la imagen */
+    width: 45%; /* Ajusta el ancho al 80% del contenedor */
+}
