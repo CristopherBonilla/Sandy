@@ -14,12 +14,13 @@ body {
     background: url('../medios/fondo.png') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
+    margin-left: 50%;
 }
 
 /* Estilo para el primer contenedor */
 #contenedor {
     text-align: center;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
@@ -34,7 +35,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     max-width: 300px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 
 /* Estilo del mensaje */
