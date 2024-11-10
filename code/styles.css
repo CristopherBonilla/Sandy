@@ -94,5 +94,5 @@ button:hover {
 #capibara-saludo {
     display: block; 
     margin: 0 auto; /* Centra la imagen */
-    width: 45%; /* Ajusta el ancho al 80% del contenedor */
+    width: 50px; /* Ajusta el ancho al 80% del contenedor */
 }
