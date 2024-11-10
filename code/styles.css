@@ -1,0 +1,98 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuración del cuerpo */
+body {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../medios/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el primer contenedor */
+#contenedor {
+    text-align: center;
+    /* margin-left: 10%; */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px; /* Espacio debajo del contenedor */
+}
+
+/* Estilo para el segundo contenedor */
+.contenedor2 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    /* margin-left: 10%; */
+}
+
+/* Estilo del mensaje */
+#mensaje {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los botones */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#botonNo {
+    background-color: #f44336;
+    transition: transform 0.2s;
+}
+
+button#botonSi {
+    background-color: #4CAF50;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Estilo de la imagen */
+#girasol {
+    display: block; 
+    margin: 0 auto; /* Centra la imagen */
+    width: 80%; /* Ajusta el ancho al 80% del contenedor */
+    max-width: 300px;
+    height: auto;
+}
+
+#girasol2 {
+    display: block; 
+    margin: -241px 180px;
+    width: 80%; /* Ajusta el ancho al 80% del contenedor */
+    max-width: 300px;
+    height: auto;
+}
+
+#girasol3 {
+    display: block; 
+    margin: -241px -127px;
+    width: 80%; /* Ajusta el ancho al 80% del contenedor */
+    max-width: 300px;
+    height: auto;
+}
+
+/* #cesped {
+    display: block; 
+    margin: -200px -215px;
+    max-width: 400px;
+
+} */
