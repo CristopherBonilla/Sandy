@@ -10,9 +10,10 @@ function siguientePaso() {
 
     if (paso === 1) {
         mensaje.textContent = "Esta es la segunda etapa. Presiona continuar.";
+        musica.play();
     } else if (paso === 2) {
         mensaje.textContent = "Esta es la tercera etapa. Disfruta la música.";
-        musica.play();
+        
     } else if (paso === 3) {
         mensaje.innerHTML = "¿Te gustaría continuar?";
         botonContinuar.style.display = "none";
