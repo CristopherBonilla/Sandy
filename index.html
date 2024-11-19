@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon/x-icon" href="/Sandy/medios/capibara.png">
-    <title>Pagina</title>
-    <link rel="stylesheet" href="/Sandy/code/styles.css">
+    <link rel="icon" type="image/x-icon" href="../capibara.png">
+    <title>Página Interactiva</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<header>
-    <img src="/Sandy/medios/capibara-saludo.gif" alt="saludo" id="capibara-saludo">
-</header>
 <body>
-    <div id="contenedor">
-        <div id="mensaje">¡Bienvenido! Presiona "Continuar" para avanzar.</div>
+    <img src="../medios/capibara-saludo.gif" alt="Saludo" id="capibara-saludo">
+    <main id="contenedor">
+        <p id="mensaje">¡Bienvenido! Presiona "Continuar" para avanzar.</p>
         <button id="botonContinuar" onclick="siguientePaso()">Continuar</button>
-        <audio id="musica" src="/Sandy/medios/cancion.m4a"></audio>        
-    </div>
-    <div class="clearfix"></div>
-    <div class="contenedor2">
-        <img src="/Sandy/medios/girasol.gif" alt="girasol" id="girasol">
-        <img src="/Sandy/medios/girasol.gif" alt="girasol2" id="girasol2">
-        <img src="/Sandy/medios/girasol.gif" alt="girasol3" id="girasol3">
-        <img src="/Sandy/medios/girasol.gif" alt="girasol4" id="girasol4">
-        <img src="/Sandy/medios/girasol.gif" alt="girasol5" id="girasol5">
-        <img src="/Sandy/medios/girasol.gif" alt="girasol6" id="girasol6">
-    </div>
-    <div class="clearfix"></div>
-    <script src="/Sandy/code/script.js"></script>
+        <audio id="musica" src="../medios/cancion.m4a"></audio>        
+    </main>
+
+    <footer>
+        <img src="./medios/girasol.gif" alt="Girasol 1" class="girasol">
+        <img src="./medios/girasol.gif" alt="Girasol 2" class="girasol">
+        <img src="./medios/girasol.gif" alt="Girasol 3" class="girasol">
+        <img src="./medios/girasol.gif" alt="Girasol 4" class="girasol">
+        <img src="./medios/girasol.gif" alt="Girasol 5" class="girasol">
+    </footer>
+    
+    
+    <script src="../script.js"></script>
 </body>
 </html>

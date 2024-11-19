@@ -1,130 +1,116 @@
-/* Reset de márgenes y padding */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Configuración del cuerpo */
+/* Estilos generales para móviles */
 body {
     display: flex;
-    flex-direction: column; /* Coloca los elementos en una columna */
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    justify-content: space-between;
+    min-height: 100vh;
     background: url('../medios/fondo.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, sans-serif;
-    margin-left: 20%; /*Centrar*/
-    transition: all 500ms;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
 }
 
-/* Estilo para el primer contenedor */
-#contenedor {
-    text-align: center;
-    margin-left: 10%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px; /* Espacio debajo del contenedor */
-}
-
-#contenedor:hover {
-    padding: 25px;
-}
-
-/* Estilo para el segundo contenedor */
-.contenedor2 {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 300px;
-    margin-left: 10%; 
-}
-
-/* Estilo del mensaje */
-#mensaje {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Estilo de los botones */
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgba(223, 69, 136, 0.8);
-    margin: 5px;
-}
-
-button#botonNo {
-    background-color: #f44336;
-    transition: transform 0.2s;
-}
-
-button#botonSi {
-    background-color: #4CAF50;
-}
-
-button:hover {
-    opacity: 0.8;
+/* Ajustes del header */
+header {
+    margin-top: 10px;
 }
 
 #capibara-saludo {
-    display: block; 
-    margin: 0 auto; /* Centra la imagen */
-    width: 100px; /* Ajusta el ancho al 80% del contenedor */
+    width: 125px;
+    display: block;
+    margin: 100px auto -100px;
 }
 
-/* Estilo de la imagen */
-#girasol {
-    display: block; 
-    margin: 0px 35px; /* Centra la imagen */
-    width: 80%; /* Ajusta el ancho al 80% del contenedor */
-    max-width: 300px;
+/* Contenedor principal */
+#contenedor {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 350px;
+    margin: 10px auto;
+}
+
+#mensaje {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Botón */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #df4588;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Girasoles (footer) */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    padding: 15px;
+    background-color: transparent;
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 200px; /* Altura del contenedor */
+    /*overflow: hidden; /* Oculta el exceso */
+    
+}
+
+.girasol {
+    width: 230px; /* Ajusta el tamaño de los girasoles */
     height: auto;
+    margin: 0px -45px 100px;
 }
 
-#girasol2 {
-    display: block; 
-    margin: -241px 185px;
-    width: 80%; /* Ajusta el ancho al 80% del contenedor */
-    max-width: 300px;
-    height: auto;
+.girasol:nth-child(1) {
+    left: 10%;
+    bottom: -30px;
+    z-index: 3;
 }
 
-#girasol3 {
-    display: block; 
-    margin: -241px -120px;
-    width: 80%; /* Ajusta el ancho al 80% del contenedor */
-    max-width: 300px;
-    height: auto;
+/* Animación para los girasoles */
+@keyframes girasolMovimiento {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
-#girasol4 {
-    display: block; 
-    margin-top: 132px; /* Centra la imagen */
-    margin-left: 20px;
-    width: 80%; /* Ajusta el ancho al 80% del contenedor */
-    max-width: 300px;
-}
+/* Responsividad para dispositivos móviles */
+@media (max-width: 600px) {
+    #contenedor {
+        padding: 10px;
+    }
 
-#girasol5 {
-    display: block; 
-    margin: -241px 185px;
-    width: 80%; /* Ajusta el ancho al 80% del contenedor */
-    max-width: 300px;
-    height: auto;
-}
+    #mensaje {
+        font-size: 1rem;
+    }
 
-#girasol6 {
-    display: block; 
-    margin: -241px -120px;
-    width: 80%; /* Ajusta el ancho al 80% del contenedor */
-    max-width: 300px;
-    height: auto;
-}
+    .girasol {
+        width: 160px;
+    }
 
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
