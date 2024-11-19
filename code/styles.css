@@ -5,7 +5,7 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
-    background: url('../medios/fondo.png') no-repeat center center fixed;
+    background: url('./medios/fondo.png') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -76,7 +76,7 @@ footer {
 .girasol {
     width: 230px; /* Ajusta el tamaño de los girasoles */
     height: auto;
-    margin: 0px -45px 100px;
+    margin: 0px -60px 100px;
 }
 
 .girasol:nth-child(1) {
@@ -106,7 +106,7 @@ footer {
     }
 
     .girasol {
-        width: 160px;
+        width: 180px;
     }
 
     button {
